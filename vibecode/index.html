@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIBE CODING - 당신의 감성을 코드로</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        .bg-vibe-black { background-color: #121212; }
+        .text-vibe-gray { color: #a0a0a0; }
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-vibe-black text-white">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-vibe-black bg-opacity-80 backdrop-blur-md z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-poppins font-bold text-2xl">VIBE CODING</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#intro" class="hover:text-purple-400 transition-colors">강의 소개</a>
+                <a href="reviews.html" class="hover:text-purple-400 transition-colors">수강생 후기</a>
+                <a href="projects.html" class="hover:text-purple-400 transition-colors">이전 기수 결과물</a>
+                <a href="https://forms.gle/Ddj742DqPZ5Eb8j79" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full transition-colors">수강 신청</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://picsum.photos/1920/1080?grayscale&blur=2');">
+            <div class="reveal">
+                <h1 class="font-poppins font-bold text-5xl md:text-7xl mb-4">코딩, 감성을 만나다</h1>
+                <p class="text-xl md:text-2xl text-vibe-gray mb-8">바이브 코딩과 함께 당신의 아이디어를 현실로 만드세요.</p>
+                <a href="https://forms.gle/Ddj742DqPZ5Eb8j79" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform transform hover:scale-105">지금 시작하기</a>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section id="intro" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <div class="reveal">
+                    <h2 class="font-poppins font-bold text-4xl md:text-5xl mb-8">왜 VIBE CODING인가?</h2>
+                    <p class="max-w-3xl mx-auto text-lg text-vibe-gray mb-16">
+                        우리는 단순히 코드를 작성하는 법을 가르치지 않습니다. <br class="hidden md:block">
+                        자신만의 스타일과 철학을 담아, 세상과 소통하는 방법을 배웁니다.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-12">
+                    <div class="reveal">
+                        <img src="https://picsum.photos/800/600?random=1" alt="Creative Coding" class="rounded-lg mb-6 shadow-lg">
+                        <h3 class="font-poppins font-semibold text-2xl mb-2">창의적 코드</h3>
+                        <p class="text-vibe-gray">정해진 정답이 아닌, 당신만의 독창적인 결과물을 만들도록 돕습니다.</p>
+                    </div>
+                    <div class="reveal">
+                        <img src="https://picsum.photos/800/600?random=2" alt="Project Based" class="rounded-lg mb-6 shadow-lg">
+                        <h3 class="font-poppins font-semibold text-2xl mb-2">프로젝트 중심</h3>
+                        <p class="text-vibe-gray">실제 동작하는 웹사이트를 만들며, 성취감과 실력을 동시에 얻어갑니다.</p>
+                    </div>
+                    <div class="reveal">
+                        <img src="https://picsum.photos/800/600?random=3" alt="Expert Mentor" class="rounded-lg mb-6 shadow-lg">
+                        <h3 class="font-poppins font-semibold text-2xl mb-2">전문가 멘토</h3>
+                        <p class="text-vibe-gray">현업 최고의 전문가가 당신의 성장을 바로 옆에서 돕습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructor Section -->
+        <section class="bg-black py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="md:flex items-center">
+                    <div class="md:w-1/2 reveal">
+                        <img src="profile.jpg" alt="강사 한종호" class="rounded-full mx-auto md:mx-0 shadow-2xl w-64 h-64 md:w-96 md:h-96 object-cover">
+                    </div>
+                    <div class="md:w-1/2 mt-12 md:mt-0 md:pl-16 text-center md:text-left reveal">
+                        <h2 class="font-poppins font-bold text-4xl md:text-5xl mb-4">이끄는 사람</h2>
+                        <h3 class="font-poppins font-semibold text-purple-400 text-2xl mb-6">한종호</h3>
+                        <p class="text-lg text-vibe-gray mb-4">
+                            "코딩은 자기 표현의 가장 강력한 도구입니다. 10년 넘게 개발자로 일하며 얻은 경험과 노하우를 여러분과 나누고 싶습니다. 기술을 넘어, 자신만의 가치를 코드로 표현하는 여정에 함께하겠습니다."
+                        </p>
+                        <p class="text-vibe-gray">- 현) 소풍벤처스 벤처파트너<br>- 전) 강원창조경제혁신센터 센터장<br>- 전) 네이버 이사</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-vibe-gray py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 VIBE CODING. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-white">Facebook</a>
+                <a href="#" class="hover:text-white">Instagram</a>
+                <a href="#" class="hover:text-white">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
